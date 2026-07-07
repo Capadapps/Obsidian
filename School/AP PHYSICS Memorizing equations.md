@@ -1,0 +1,5 @@
+ - Fg=mgsin0 & Fg=mgcos0 on inclines
+ - Power = work/change in time
+ - Collisions and explosions 
+ - I=Net mr^2 (all initial)
+ - 
