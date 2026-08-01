@@ -49,4 +49,10 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
   **local model** (no API key). `/memory/*` endpoints added. Verified: **20/20** tests; live run held
   a 10-message window, persisted+searched a pointer, distilled "prefers VS Code" into working memory.
   API-key decision: sticking with an API key (subscription can't back a raw-API app; local model
-  keeps the meter near zero) — Logan will add the key later. Next: Phase 3 integrations, OR orb UI.
+  keeps the meter near zero) — Logan will add the key later.
+- 2026-08-01 — **Phase 4 done: the orb** (`src/Jarvis.Orb`, WPF, `net10.0-windows`). Frameless
+  transparent always-on-top glowing orb + type panel, global hotkeys (Ctrl+Alt+J), system tray,
+  talks to the brain over HTTP, records to memory. Chose WPF over Avalonia for Windows-native
+  transparency/tray/global-hotkeys; phone stays a separate future client. Screenshot-verified a full
+  click→type→reply through the brain (see Phase 4 auto note). Next: Phase 3 integrations — local file
+  search first (no accounts), then Gmail/Calendar/Outlook once Logan makes the OAuth apps.
