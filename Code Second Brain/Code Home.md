@@ -10,6 +10,7 @@ The hub for everything code. Claude reads and writes here when you're working on
 - **Reference/** — evergreen knowledge: snippets, prompts, how-tos, gotchas.
 
 ## Current projects
+- [[jarvis-poc]] — local-first personal AI assistant (orb + app, Claude + local model routing)
 - [[tictactoe]] — private repo
 - [[Test-repo]] — public repo
 
