@@ -42,4 +42,11 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
   cloud tiers fall back to local without a key. VS Code workspace + project `CLAUDE.md` added.
 - 2026-08-01 — **Git/GitHub set up**: private repo `Capadapp/jarvis-poc`, initial commit pushed.
   Going forward: commit + push after each meaningful step (recorded in project + global CLAUDE.md).
-  Next: Phase 2 Memory Manager (3 files + distillation).
+- 2026-08-01 — **Phase 2 done: Memory Manager** (`src/Jarvis.Brain/Memory/`). Three small markdown
+  files: `recent-dialogue.md` (rolling last-10 buffer, oldest evicted), `long-term.md` (tiny
+  summary→file-path pointer index with keyword search), `working-memory.md` (durable notes, pruned
+  when large). `LlmMemoryCurator` distills durable facts from evicted messages + prunes, all on the
+  **local model** (no API key). `/memory/*` endpoints added. Verified: **20/20** tests; live run held
+  a 10-message window, persisted+searched a pointer, distilled "prefers VS Code" into working memory.
+  API-key decision: sticking with an API key (subscription can't back a raw-API app; local model
+  keeps the meter near zero) — Logan will add the key later. Next: Phase 3 integrations, OR orb UI.
