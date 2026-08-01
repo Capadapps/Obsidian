@@ -54,5 +54,10 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
   transparent always-on-top glowing orb + type panel, global hotkeys (Ctrl+Alt+J), system tray,
   talks to the brain over HTTP, records to memory. Chose WPF over Avalonia for Windows-native
   transparency/tray/global-hotkeys; phone stays a separate future client. Screenshot-verified a full
-  click→type→reply through the brain (see Phase 4 auto note). Next: Phase 3 integrations — local file
-  search first (no accounts), then Gmail/Calendar/Outlook once Logan makes the OAuth apps.
+  click→type→reply through the brain (see Phase 4 auto note).
+- 2026-08-01 — **Phase 3 (part 1): local file search** (`src/Jarvis.Brain/Integrations/`). `IIntegration`
+  interface + `LocalFileSearch` (searches Documents by default: filename + text content, prunes
+  node_modules/.git, survives access-denied). `/integrations/files/search` endpoint; `/health` now
+  reports integration availability. 25/25 tests; live search of Documents found the project's own
+  vault notes. **Remaining Phase 3 (needs Logan's OAuth apps):** Gmail + Google Calendar (Google
+  Cloud OAuth), Outlook mail (Microsoft Entra / Graph). That's the next build once the apps exist.
