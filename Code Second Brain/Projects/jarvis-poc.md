@@ -1,8 +1,9 @@
 ---
-repo: (local only for now — C:\Users\logan\Projects\jarvis-poc)
-visibility: local
+repo: https://github.com/Capadapp/jarvis-poc
+visibility: private
 status: active
 created: 2026-08-01
+language: C# / .NET 10
 ---
 
 # jarvis-poc
@@ -32,7 +33,13 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
 - No school accounts / Teams for now (avoids Microsoft admin-consent hurdles).
 
 ## Log
-- 2026-08-01 — Project created. Phase 1 built + verified: FastAPI brain service (localhost,
-  bearer-auth), provider-agnostic model router with Claude + Ollama backends. Router
-  classification 7/7 on smoke test; local `llama3:latest` generates via Ollama; cloud tier
-  falls back gracefully when no API key. Next: Phase 2 Memory Manager (3 files + distillation).
+- 2026-08-01 — Project created; Phase 1 first built in Python (FastAPI), verified working.
+- 2026-08-01 — **Switched primary language to C# / .NET 10** (Logan's call; simpler single-language
+  stack for brain + UI + future phone). Ported Phase 1 to ASP.NET Core: `src/Jarvis.Brain` with
+  bearer-auth brain API (`/health`, `/chat`, `/ws`) on :8756, provider-agnostic `ModelRouter` over
+  `ClaudeBackend` (thin Anthropic REST wrapper) + `OllamaBackend`. Tier config in `appsettings.json`.
+  Verified: clean build, **8/8** xUnit classification tests, live `/chat` returns a `llama3` reply,
+  cloud tiers fall back to local without a key. VS Code workspace + project `CLAUDE.md` added.
+- 2026-08-01 — **Git/GitHub set up**: private repo `Capadapp/jarvis-poc`, initial commit pushed.
+  Going forward: commit + push after each meaningful step (recorded in project + global CLAUDE.md).
+  Next: Phase 2 Memory Manager (3 files + distillation).
