@@ -78,3 +78,10 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
 - 2026-08-02 — **One-click launcher** (`Jarvis.cmd` + `run.ps1`): starts the brain, polls `/health` until
   it answers, then opens the app with `JARVIS_OPEN_APP=1` and stops the brain when the app exits. Also
   fixed the orb loading `appsettings.Local.json` (copied to output). Commit `24acaa5`.
+- 2026-08-02 — **Three first-use fixes**: push-to-talk moved to **Ctrl+Alt+V** (Claude's desktop app
+  owns Ctrl+Alt+Space; old settings migrate automatically, and stolen combos now warn in Settings
+  instead of failing silently); the **assistant name is read live** from `settings.json` so renaming it
+  applies to the next message, not the next brain restart; and **saved chats** — one JSON file per
+  conversation in `%APPDATA%\Jarvis\chats`, with a sidebar to start/reopen/rename/delete, and each
+  chat's last 20 turns sent along so reopening resumes the thread. 34/34 tests, clean build.
+  Commits `dd9ae71`, `2fb3492`. See the auto note for what still needs Logan's eyes.
