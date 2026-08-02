@@ -61,3 +61,9 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
   reports integration availability. 25/25 tests; live search of Documents found the project's own
   vault notes. **Remaining Phase 3 (needs Logan's OAuth apps):** Gmail + Google Calendar (Google
   Cloud OAuth), Outlook mail (Microsoft Entra / Graph). That's the next build once the apps exist.
+- 2026-08-02 — **Phase 5 done: local speech-to-text** (`src/Jarvis.Brain/Speech/`, `src/Jarvis.Orb/`).
+  Our own Whisper agent on **Whisper.net** (C#-native whisper.cpp): brain hosts `POST /speech/transcribe`
+  (WAV → text, model auto-downloaded to gitignored `data/models/`); orb captures the mic via **NAudio**
+  and **Ctrl+Alt+Space** is real push-to-talk (toggle). Engine sits in the brain so a future phone client
+  stays thin. Verified live: transcribed `jfk.wav` correctly (28 s first call incl. model download, 1.5 s
+  cached, CPU base model). 28/28 tests. GPU = one-line runtime swap. Commit `22bdaf9`. See Phase 5 auto note.
