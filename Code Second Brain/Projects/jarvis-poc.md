@@ -75,3 +75,6 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
   its persona name. Orb polish folded in (click-outside-dismiss, right-click-to-open, live re-accent).
   Clean build, 28/28 tests, app renders + reports `connected` (screenshot in Phase 6 auto note). Deferred:
   streaming replies. Commit `1b85727`.
+- 2026-08-02 — **One-click launcher** (`Jarvis.cmd` + `run.ps1`): starts the brain, polls `/health` until
+  it answers, then opens the app with `JARVIS_OPEN_APP=1` and stops the brain when the app exits. Also
+  fixed the orb loading `appsettings.Local.json` (copied to output). Commit `24acaa5`.
