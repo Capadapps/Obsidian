@@ -67,3 +67,11 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
   and **Ctrl+Alt+Space** is real push-to-talk (toggle). Engine sits in the brain so a future phone client
   stays thin. Verified live: transcribed `jfk.wav` correctly (28 s first call incl. model download, 1.5 s
   cached, CPU base model). 28/28 tests. GPU = one-line runtime swap. Commit `22bdaf9`. See Phase 5 auto note.
+- 2026-08-02 — **Phase 6 done: full app + settings** (`src/Jarvis.Orb/MainWindow.*`, `UserSettings`,
+  `StartupManager`). Second surface on the same brain: dark chat UI (nav, message bubbles + model/tier
+  badge, mic, live health dot) opened from tray/right-click-orb; hides to tray on close. Settings screen
+  (name, accent + live preview, orb size, hotkeys, brain URL, launch-on-startup, desktop shortcut) saved
+  to `%APPDATA%\Jarvis\settings.json` and **applied live** everywhere; the brain reads the same file for
+  its persona name. Orb polish folded in (click-outside-dismiss, right-click-to-open, live re-accent).
+  Clean build, 28/28 tests, app renders + reports `connected` (screenshot in Phase 6 auto note). Deferred:
+  streaming replies. Commit `1b85727`.
