@@ -85,3 +85,10 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
   conversation in `%APPDATA%\Jarvis\chats`, with a sidebar to start/reopen/rename/delete, and each
   chat's last 20 turns sent along so reopening resumes the thread. 34/34 tests, clean build.
   Commits `dd9ae71`, `2fb3492`. See the auto note for what still needs Logan's eyes.
+- 2026-08-07 — **Jarvis Console built** from the `design_handoff_jarvis_console` bundle: full-screen
+  surface with the dot-cloud orb, twelve summonable panels, dock chips, and a command bar, opened from
+  the tray. Orb dots are rasterized by hand; the halo moved to a GPU gradient (33% → 18% of a core), and
+  everything stops when hidden (0%). Mic and replies are real; panel data stays placeholder per the
+  handoff. Found and fixed a bug in the design's own intent regexes ("brain" matched `rain` → Weather).
+  Verified with a new off-screen render harness that also catches binding errors. 34/34 tests,
+  commit `f5deebd`.
