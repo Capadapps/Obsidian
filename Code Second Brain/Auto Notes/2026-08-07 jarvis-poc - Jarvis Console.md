@@ -64,6 +64,29 @@ summonable panels — as a third WPF surface on the same brain.
 - CPU measured on the real app: **18%** of one core visible, **0%** hidden.
 - Commit `f5deebd`, pushed.
 
+## Follow-up (2026-08-08): the console had no entry point
+
+Logan started Jarvis and the console never appeared. Not a rendering bug — an entry-point gap I left:
+`run.ps1` sets `JARVIS_OPEN_APP=1`, which opens the **chat** window, so the launcher never showed the
+console at all. It was reachable only from a tray item and an env var, neither of which anyone would
+find. Fixed:
+- **Launcher opens the console** (`run.ps1` now sets `JARVIS_OPEN_CONSOLE=1`); the old behaviour is one
+  commented line away.
+- **Ctrl+Alt+C** summons it from anywhere — a third configurable hotkey with its own Settings field.
+- Console is now the **first tray item**; "Open Jarvis" renamed to "Open chat".
+- **Single instance.** Testing surfaced that launching twice started a second copy: two orbs, two tray
+  icons, and a second copy whose global hotkeys silently did nothing (Windows gives a combo to whoever
+  registered first — the same trap as the Ctrl+Alt+Space bug). A named session-local `EventWaitHandle`
+  makes a second launch signal the running copy to show its console, then exit.
+
+Verified end to end: launcher → "Jarvis Console" window enumerated as Visible=True; second launch left
+exactly one process and took CPU 0% → 10% (i.e. it summoned the hidden console). 34/34 tests.
+Commit `47c2311`.
+
+Note for next time: the first launch rebuilds and can take ~a minute — easy to mistake for "nothing
+happened". Also, an occluded console reads ~3% CPU rather than 0%, so CPU alone is not a reliable
+"is it open" signal; enumerate the window instead.
+
 ## Pick up next
 - **Logan to eyeball it**: tray → Open console. Try "what's the weather", "open the brain log",
   Ctrl+Alt+V to talk.

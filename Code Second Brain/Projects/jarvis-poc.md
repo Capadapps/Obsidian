@@ -92,3 +92,8 @@ later without a rewrite. Full design: `C:\Users\logan\.claude\plans\hello-claude
   handoff. Found and fixed a bug in the design's own intent regexes ("brain" matched `rain` → Weather).
   Verified with a new off-screen render harness that also catches binding errors. 34/34 tests,
   commit `f5deebd`.
+- 2026-08-08 — **Console entry points fixed**: it had none anyone would find — the launcher opened the
+  chat window, not the console. Launcher now opens the console, **Ctrl+Alt+C** summons it (configurable
+  in Settings), and it's the first tray item. Also added a **single-instance guard**: a second launch
+  used to start a duplicate copy whose global hotkeys silently failed; it now signals the running copy
+  to show its console. Commit `47c2311`.
