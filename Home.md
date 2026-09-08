@@ -1,44 +1,41 @@
 # 🏠 Logan's Vault
 
-> *Last reorganized: 2026-08-03 — using modified PARA (areas by life domain + Inbox for captures)*
+*Personal brain — projects, life, flight, business. School lives in Notion.*
 
 ---
 
-## Quick Nav
+## Areas
 
-| Area | Home Note | What lives here |
-|------|-----------|-----------------|
-| 📥 Inbox | [[Inbox]] | New captures, unsorted notes |
-| 🏫 School | [[School Home]] | 12th grade coursework, AP prep |
-| 💼 Business | [[Business]] | SM+CA — clients, strategy, tools |
-| ✈️ Flight | [[Flight Home]] | Ground school, progress logs, study materials |
-| 💻 Code | [[Code Home]] | Projects, auto-notes, GitHub activity |
-| 🧠 Personal | [[Personal Home]] | Hobbies, gear, interests |
-| 💡 Thinking & Skills | — | Trading, math, audio knowledge |
-| 📦 Archive | — | 10th & 11th grade school work |
+| | Area | Home Note | What lives here |
+|--|------|-----------|-----------------|
+| 📥 | Inbox | [[Inbox]] | Quick captures, unsorted notes |
+| 💻 | Code & Projects | [[Code Home]] | Coding projects, GitHub activity, auto-notes |
+| 🏠 | Personal | [[Personal Home]] | Hobbies, gear, ideas, interests |
+| ✈️ | Flight | [[Flight Home]] | PPL training — logs, ground school, study |
+| 💼 | Business | [[Business]] | SM+CA — clients, strategy, outreach |
+| 📚 | Reference | — | Skills, knowledge, trading notes |
+| 🗄️ | Archive | — | Old school work and past projects |
 
 ---
 
-## Active Projects (update manually)
+## Active Right Now
 
 - **jarvis-poc** — local AI assistant → [[jarvis-poc]]
-- **Flight training** — ground school → [[Aviation progress logs]]
+- **Flight training** — working toward PPL → [[Aviation progress logs]]
 - **Business** — client acquisition → [[30-Day Plan to Sign 5 Local Business Clients]]
 
 ---
 
-## How the vault works
+## How it works
 
-**Inbox first.** Any quick idea or note goes to [[Inbox]]. Process it weekly.
+**Inbox first.** Dump anything here → [[Inbox]]. Sort it weekly.
 
-**Folders = life areas.** One folder per major domain (School, Business, Flight, Code, Personal). Two levels max — avoid deep nesting.
+**No school here.** Coursework, assignments, and mobile notes live in Notion.
 
-**MOC notes = navigation.** Each folder has a Home note (this file, [[School Home]], [[Flight Home]], etc.) that links everything inside. Browse from here, not from the file tree.
+**Code Second Brain is self-maintaining.** Auto-notes and GitHub activity are written by scripts — don't edit those by hand.
 
-**Code Second Brain is self-maintaining.** Claude auto-generates notes in `Code Second Brain/Auto Notes/` and `GitHub Activity/` — don't edit those by hand.
-
-**Archive = done/past.** Old school years go in `Archive/`. Nothing gets deleted.
+**Archive = done, not deleted.** Past school years and dead projects go to `Archive/`. Nothing gets removed.
 
 ---
 
-*Vault backed up to GitHub (private) via Obsidian Git plugin.*
+*Backed up to GitHub (private) via Obsidian Git.*

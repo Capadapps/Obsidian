@@ -2,10 +2,12 @@
 
 Repo: https://github.com/Capadapp/jarvis-poc
 
-_Auto-generated. Last synced: 2026-08-07 17:47_
+_Auto-generated. Last synced: 2026-09-07 17:47_
 
 ## Recent commits
 
+- 2026-08-09 - Make the console reachable, and enforce a single instance
+- 2026-08-08 - Add the Jarvis Console surface
 - 2026-08-07 - Rewrite CLAUDE.md around the current architecture
 - 2026-08-02 - Add saved chats and move push-to-talk to Ctrl+Alt+V
 - 2026-08-02 - Read the assistant name live instead of at startup
