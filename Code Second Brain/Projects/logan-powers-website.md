@@ -23,3 +23,4 @@ Personal portfolio site: static HTML/CSS/JS with GSAP + ScrollTrigger + Lenis mo
 ## Log
 - 2026-10-19 — Git initialized, pushed to new private repo Capadapp/logan-powers-website.
 - 2026-10-19 — Removed 0→100 preloader; page now fades in on window load (`is-loading` class on `<html>`, 3.5–4s safety nets).
+- 2026-10-19 — Removed custom cursor. Added 4 capability pages (`/capabilities`) + nav dropdown, driven by `js/capabilities.js`; un-pinned Flight Log into a grid; removed hover images; new golden-hour jet hero. Image credits in README.
