@@ -15,6 +15,7 @@ The hub for everything code. Claude reads and writes here when you're working on
 - [[Test-repo]] — public repo
 - [[logan-powers-website]] — personal portfolio site (static HTML/CSS/JS + GSAP), private repo
 - [[northlight-site]] — "Northlight" AI intake SaaS for law firms: marketing site + business plan, private repo
+- [[minecraft-server-map]] — shared web map for the Bedrock server with friends, private repo
 
 ## Conventions
 - New project → create a note in `Projects/` from day one, link it here
