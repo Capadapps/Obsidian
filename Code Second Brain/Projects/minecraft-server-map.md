@@ -24,3 +24,4 @@ Local folder: `C:\Users\logan\Desktop\minecraft-server-map`
 
 ## Log
 - 2026-11-01 — Built and tested locally, pushed to private repo. Not deployed yet: needs Logan's Cloudflare account. See [[2026-11-01 minecraft-server-map - initial build]].
+- 2026-11-02 — Added player accounts, admin, ownership, allies, automatic colours, World History and a browser AI chronicle. Still local only. See [[2026-11-02 minecraft-server-map - accounts and history]].
