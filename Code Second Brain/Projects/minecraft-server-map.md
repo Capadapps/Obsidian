@@ -1,7 +1,7 @@
 ---
 repo: https://github.com/Capadapp/minecraft-server-map
 visibility: private
-status: active
+status: live
 created: 2026-11-01
 ---
 
@@ -34,3 +34,4 @@ Logan wants to keep adding to this. Not started:
 - 2026-11-01 — Built and tested locally, pushed to private repo. Not deployed yet: needs Logan's Cloudflare account. See [[2026-11-01 minecraft-server-map - initial build]].
 - 2026-11-02 — Added player accounts, admin, ownership, allies, automatic colours, World History and a browser AI chronicle. Still local only. See [[2026-11-02 minecraft-server-map - accounts and history]].
 - 2026-11-03 — Added factions with logos, plus smaller extras and full deploy steps. Ready for Logan to deploy. See [[2026-11-03 minecraft-server-map - factions and ship prep]].
+- 2026-11-03 — Deployed to https://minecraft-server-map.pages.dev on Cloudflare with local data copied over. See [[2026-11-03 minecraft-server-map - factions and ship prep]].

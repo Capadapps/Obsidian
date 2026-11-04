@@ -31,5 +31,10 @@ date: 2026-11-03
 - `npm run demo:phone` was never loaded from a real phone. The last re-check was blocked by the permission system.
 - AI sentences only tested on Logan's PC, and the AI hasn't been re-run on faction data.
 
+## Deployed later the same day
+- Live at https://minecraft-server-map.pages.dev. Database `minecraft-map` on Logan's Cloudflare account. Secrets set by Logan.
+- Changing `database_id` silently pointed local tools at a new empty database, so the first export was empty. Added `preview_database_id` with the old placeholder and exported data only, since the online tables already existed. README order fixed.
+- Live checks passed for pages, tiles, the API and sign-in protection. Signing in and turning admin on online were not tested, because those need Logan's passwords.
+
 ## Pick up next
-Logan is deploying himself using the README. Open to new ideas; see Ideas in the project note.
+Open to new ideas; see Ideas in the project note.
